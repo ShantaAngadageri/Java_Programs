@@ -1,19 +1,21 @@
-class Animal {
-    void eat() {
-        System.out.println("Eating...");
-    }
+class Sample
+{
+	void disp(){
+		System.out.println("Hii");
 }
-
-class Dog extends Animal {
-    void bark() {
-        System.out.println("Barking...");
-    }
 }
-
-public class Single {
-    public static void main(String[] args) {
-        Dog d = new Dog();
-        d.eat();   // from Animal
-        d.bark();  // from Dog
-    }
+class Demo extends Sample
+{
+	void cool(){
+		System.out.println("Hello");
+	}
+}
+class Single
+{
+	public static void main(String[] args)
+	{
+		Demo d1=new Demo();
+		d1.cool();
+		d1.disp();
+	}
 }
