@@ -1,13 +1,10 @@
-class Triangle{
-	void area(int a, int b){
-		double res= 0.5*a*b;
-		System.out.println(res);
-	}
-	public static void main(String[] args)
-	{
-		Triangle T=new Triangle();
-		T.area(5,7);
-	}
-}
+class Triangle {
+    static void area(int b, int h) {
+        double area = 0.5 * b * h;
+        System.out.println(area);
+    }
 
-	
+    public static void main(String[] args) {
+        area(7, 8);
+    }
+}
