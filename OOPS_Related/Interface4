@@ -1,0 +1,37 @@
+package Polymorphism;
+
+interface LG1{
+	void select();
+}
+class Mobile2 implements LG1{
+	public void select() {
+		System.out.println(" select Mobiles");
+	}
+}
+class Refrigirator1 implements LG1{
+	public void select() {
+		System.out.println("selct refrigirators");
+	}
+}
+class Telivision1 implements LG1{
+	public void select() {
+		System.out.println("select telivision");
+	}
+
+class Stimulator2{
+	static void Buy(LG1 l1) {
+		l1.select();
+	}  
+}
+class interface1 {
+	public static void main(String[] args) {
+		Mobile2 m1=new Mobile2();
+		Refrigirator1 r1=new Refrigirator1();
+		Telivision1 t1=new Telivision1();
+		Stimulator2.Buy(m1);
+		Stimulator2.Buy(t1);
+		Stimulator2.Buy(r1);
+		
+	}
+
+}
