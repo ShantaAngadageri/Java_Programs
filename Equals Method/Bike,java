@@ -1,0 +1,28 @@
+package equals;
+
+public class Bike {
+	String color;
+	String brand;
+	int cost;
+	Bike(String color, int cost, String brand)
+	{
+		this.color=color;
+		this.cost=cost;
+		this.brand=brand;
+	}
+	public boolean equals(Object obj) {
+		Bike m2= (Bike)obj;
+		return this.cost==m2.cost;
+	}
+	public static void main(String[] args)
+	{
+		Bike m1=new Bike("pink",500000,"KTM" );
+		Bike m2=new Bike("orange",550000,"splender" );
+		if(m1.equals(m2)) {
+			System.out.println("Same");
+		}
+		else {
+			System.out.println("Different");
+		}
+	}
+}
