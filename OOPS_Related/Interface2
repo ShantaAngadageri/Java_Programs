@@ -1,0 +1,36 @@
+package Interface;
+
+interface Train{
+	void Travel();
+}
+class Sleeper implements Train{
+	public void Travel() {
+		System.out.println("Sleeper Train");
+	}
+}
+class FirstClass implements Train{
+	public void Travel() {
+		System.out.println("Through firstclass");
+	}
+}
+class SecondClass implements Train{
+	public void Travel() {
+		System.out.println("Travel through secondclass ");
+	}
+}
+class stimulator1{
+	static void using(Train t1) {
+		t1.Travel();
+	}
+}
+class interface4 {
+public static void main(String[] args) {
+	Sleeper s1=new Sleeper();
+	FirstClass f1=new FirstClass(); 
+	SecondClass c2=new SecondClass();
+	stimulator1.using(s1);
+	stimulator1.using(f1);
+	stimulator1.using(c2);
+	
+   }
+}
